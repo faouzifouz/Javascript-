@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Demander à l’utilisateur de saisir son âge. 
+        S’il a plus de 18 ans, afficher " Vous êtes majeur ". Sinon afficher " Vous êtes mineur ".</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <form>
+                <label for="age">Votre âge : </label><input type="text" id="age" name="age"/><br/>
+                <button id="valider" name="valider" onclick="si()">Valider</button>
+    </form>
+
+    <script>
+        function si(){
+            var legal = document.getElementById("age").value;
+
+                if(legal>=18){
+                alert( 'Vous êtes majeurs');
+                        }
+             else{
+                alert('Stop vous êtes mineur');
+                    }
+
+               
+         }
+    </script>
+
+</body>
+</html>
