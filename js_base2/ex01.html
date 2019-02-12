@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>écriture d'une fonction</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <button onclick="C_Surface_Rect()">
+        Calculer la surface d'un rectangle
+    </button>
+
+    <button onclick="periRectangle()">
+        Calculer le périmètre d'un rectangle
+    </button>
+
+
+
+    <script>
+    function C_Surface_Rect(){
+
+        var largeur = prompt("Entrer votre largeur : ");
+
+        var longueur = prompt("Entrer votre longueur : ");
+
+        var resultat = (largeur*longueur);
+
+        
+
+        alert("la surface est de : " + resultat);
+
+    }
+
+
+    function periRectangle(){
+       
+
+    var lg = prompt("Entrer votre largeur : ");
+
+    var long = prompt("Entrer votre longueur : ");
+
+    var resultat = (+lg+ +long)*2;
+
+
+
+    alert("le périmètre est de : " + resultat);
+
+}
+</script>
+
+    
+    
+</body>
+</html>
