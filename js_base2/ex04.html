@@ -3,31 +3,37 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>écriture d'une fonction avec arguments</title>
+    <title>utilisation d'un tableau</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
     <script src="main.js"></script>
 </head>
 <body>
-    <button onclick="affiche()">
-        demo
-    </button>
+
+        <button onclick="affiche()">
+                exercice 4 utilisation tableaux
+            </button>
+
+
 
     <script>
-        var a = 3;
-        var b = 2;
+    let tab=[-2,1,4];
 
-         function triple(x){
-            return x*3;
+    
+
+
+    function additionne(x){
+            return x+2;            
          }
 
          function affiche(){
-            
-            
-            alert( triple(a));
-            alert( triple(b));
-         }
 
+                
+
+            alert( additionne(tab[0]));
+            
+            alert( additionne(tab[2]));
+         }
     </script>
 </body>
 </html>

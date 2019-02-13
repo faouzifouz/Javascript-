@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Exercice 6 - appel à une fonction retournant une valeur</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+
+        <button onclick="affiche()">
+                Exercice 6 - appel à une fonction retournant une valeur
+         </button>
+
+    <script>
+    let tab=[-2,1,4];
+
+    
+
+
+        function soustrait(x){
+        return x-2;            
+     }
+
+     function si(){
+         
+         
+         if(tab>0){
+                alert( 'Vous êtes majeurs');
+         }
+     }
+
+     function affiche(){
+
+            
+
+        alert( soustrait(tab[0]));
+        
+        alert( soustrait(tab[2]));
+     }
+    
+    </script>
+</body>
+</html>
