@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ex08 -utilisation de switch et de l'objet date</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+   
+    <button onclick="jourDelaSemaine()">utilisation de switch et de l'objet date</button>
+
+    <script>
+        
+        function jourDelaSemaine() {
+           
+    
+      switch (new Date().getDay()) {
+         case 0:
+        d = "Dimanche";
+        break;
+         case 1:
+        d = "Lundi";
+          break;
+         case 2:
+        d = "Mardi";
+        break;
+         case 3:
+        d = "Mercredi";
+        break;
+         case 4:
+        d = "Jeudi";
+        break;
+        case 5:
+        d = "Vendredi";
+        break;
+        case  6:
+        d = "Samedi";
+        break;
+    }
+            alert("On est "+d);
+
+            
+        }
+    
+    
+    </script>
+
+</body>
+
+
+</html>
