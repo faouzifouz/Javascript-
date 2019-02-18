@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>le DOM HTML</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+    <script src="assets/js/testexo.js"></script>
+</head>
+<body>
+    <h1 id="gros_titre">Découverte du DOM HTML</h1>
+    <p>Du texte et <a href="http://pierre-giraud.com">un lien</a></p>
+    <p>Un deuxiemes paragraphe</p>
+    
+    <script> 
+
+    //  let titre = document.getElementById('gros_titre');
+
+    //  alert(titre);
+    // let tableau = document.getElementsByTagName('p');
+
+    //  alert("Notre page contient : " +tableau.length+ "paragraphe(s)");
+
+        document.getElementById("gros_titre").innerHTML='Titre modifié';
+
+        // Modifie le titre 
+
+        document.getElementById("gros_titre").innerHTML+=" ajouter du texe en javascript";
+        // ajoute du texte  on peut y ajouter des balises de style aussi
+        document.querySelector('a').href="http://www.google.be";
+
+        // pour changer l'attribut d'un element ici "a" et donc l url.
+        // pour changer la class on met entre parentese ("para") et classeName apres pour changer la class
+
+        document.getElementById("gros_titre").style.color='green';
+        document.getElementById("gros_titre").style.fontSize="40px";
+        // ici change le style du texte couleur et taille
+    </script>
+</body>
+</html>

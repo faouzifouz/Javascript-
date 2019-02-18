@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exercice 5.Dans le fichier HTML fourni, faire comme dans l'exercice 1 mais avec 5 images.
+        Bonus Ne faire qu'une seule fonction JavaScript pour cet exercice.
+        6.Dans le fichier HTML fourni, faire comme dans l'exercice 5 mais remettre l'image d'origine dès que la souris ne survol plus l'image.
+          Bonus Ne faire que deux fonctions JavaScript pour cet exercice.
+      
+      </title>
+  </head>
+  <body>
+    <div class="conteneur">
+      <img src="assets/img/imagex1.jpg" id="image1" onmouseover="change()" onmouseout="ret()" />
+      <img src="assets/img/image2.jpg" id="image2" onmouseover="change2()" onmouseout="ret2()"/>
+      <img src="assets/img/image3.jpg" id="image3"onmouseover="change3()" onmouseout="ret3()" />
+      <img src="assets/img/image4.jpg" id="image4"onmouseover="change4()" onmouseout="ret4()" />
+      <img src="assets/img/image5.jpg" id="image5" onmouseover="change5()" onmouseout="ret5()"/>
+    </div>
+
+
+    <script>
+      function change(){
+
+document.getElementById("image1").src="assets/img/image1_2.jpg";
+}
+
+function ret () {
+
+document.getElementById("image1").src="assets/img/imagex1.jpg";
+
+}
+
+function change2(){
+
+document.getElementById("image2").src="assets/img/image1_2.jpg";
+}
+
+function ret2 () {
+
+document.getElementById("image2").src="assets/img/imagex1.jpg";
+}
+
+function change3(){
+
+document.getElementById("image3").src="assets/img/image3.jpg";
+}
+
+function ret3 () {
+
+document.getElementById("image3").src="assets/img/image3_2.jpg";
+}
+
+function change4(){
+
+document.getElementById("image4").src="assets/img/image1_2.jpg";
+}
+
+function ret4 () {
+
+document.getElementById("image4").src="assets/img/imagex1.jpg";
+}
+function change5(){
+
+document.getElementById("image5").src="assets/img/image1_2.jpg";
+}
+
+function ret5 () {
+
+document.getElementById("image5").src="assets/img/imagex1.jpg";
+}
+    
+    </script>
+  </body>
+</html>

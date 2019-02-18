@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../../js_base3/assets/scss/style.scss"
+    ],
+    "names": [],
+    "file": "style.min.css"
+}

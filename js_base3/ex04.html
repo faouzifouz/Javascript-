@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>4.Dans le fichier HTML fourni, faire que le bouton RAZ efface les données des champs du formulaire.</title>
+</head>
+<body>
+  <form>
+    <label for="nom">Votre nom  : </label><input type="text" name="nom" value="Doe" id="nom" />
+    <label for="prenom">Votre prenom  : </label><input type="text" name="prenom" value="John" id="prenom" />
+    <label for="ville">Votre ville  : </label><input type="text" name="ville" value="New York" id="ville" />
+    <button type="button" name="button" onClick="del()">RAZ</button>
+  </form>
+
+    <script>
+      function del(){
+            let x= document.querySelectorAll("input").values("");
+            
+    //     for (i=0 ; i<x.length; i++){
+    //          x[i].setAttribute("value", "");
+    // }
+}
+  
+  </script> 
+</body>
+</html>
