@@ -6,49 +6,39 @@
     <title>Exercice 11 - utilisation des boucles et tests</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <script src="main.js"></script>
+    
 </head>
 <body>
     <button onclick="calculMoyenne()">utilisation des boucles et tests</button>
 
     <script>
         function calculMoyenne() {
-
-        let i=[];
-        let somme=0;
-        let moyenne=0;
-        let nbNombre=0;
-
-while (i<3,i++) {
-    
+         let entree = 0;
+         let somme=0; 
 
             do {
                  nbNombre=Number(prompt("Entrer un nombre entier"));
 
-                 if (nbNombre!=parseInt(nbNombre)) {
-                     alert("Erreur, entrer un nombre entier");
-                     
+
+                    
+                 if (Number.isInteger(nbNombre)) {
+                      somme=somme+nbNombre;
+                      entree++;
+                 }
+                 else{
+                    alert("Erreur, entrer un nombre entier");
                  }
 
-            } while (condition) {
-                
-              
-                if (nbNombre<0) {
+            } while (nbNombre>=0) 
 
-                    moyenne= i/nbNombre;
-                    
+                if (nbNombre<0) {
+                    let moyenne = somme/entree;
+                    alert("la moyenne ="+moyenne+"nombre d'entree="+ entree);
                 }
-                nbNombre=i.push(i++);
+                
             
-           }
-              
         }
-        }    
-           alert("Total valeur :" +nbNombre+"\n +Moyenne :" +moyenne);
-       
-        
-      
-        
+                  
     
     </script>
 

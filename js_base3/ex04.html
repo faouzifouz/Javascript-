@@ -6,19 +6,18 @@
 </head>
 <body>
   <form>
-    <label for="nom">Votre nom  : </label><input type="text" name="nom" value="Doe" id="nom" />
-    <label for="prenom">Votre prenom  : </label><input type="text" name="prenom" value="John" id="prenom" />
-    <label for="ville">Votre ville  : </label><input type="text" name="ville" value="New York" id="ville" />
+    <label for="nom">Votre nom  : </label><input type="text" name="nom" value="Doe" id="nom" class="fin" />
+    <label for="prenom">Votre prenom  : </label><input type="text" name="prenom" value="John" id="prenom" class="fin" />
+    <label for="ville">Votre ville  : </label><input type="text" name="ville" value="New York" id="ville" class="fin"/>
     <button type="button" name="button" onClick="del()">RAZ</button>
   </form>
 
     <script>
       function del(){
-            let x= document.querySelectorAll("input").values("");
+          document.getElementById('nom').value=" ";
+          document.getElementById('prenom').value=" ";
+          document.getElementById('ville').value=" ";
             
-    //     for (i=0 ; i<x.length; i++){
-    //          x[i].setAttribute("value", "");
-    // }
 }
   
   </script> 
