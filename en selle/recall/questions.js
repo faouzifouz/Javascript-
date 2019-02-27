@@ -1,7 +1,8 @@
+//afficher les lettre qui commence par "a"
 var selectElementsStartingWithA = function(array) {
     return array.filter((begin) => begin.startsWith("a"));
 }
-
+//afficher les mots qui commence par une voyelle
 var selectElementsStartingWithVowel = function(array) {
     
     return array.filter((begin) => begin.startsWith("a")
@@ -11,54 +12,92 @@ var selectElementsStartingWithVowel = function(array) {
      ||begin.startsWith("u") 
      ||begin.startsWith("y"))
 }
-
+//afficher tout sauf element null
 var removeNullElements = function(array) {
     return array.filter((bolean)=>bolean !== null)  ;
 }
-
+//afficher tout sauf false et null
 var removeNullAndFalseElements = function(array) {
     return array.filter((bolean) =>bolean !== false).filter((element)=>element!==null)
 }
-
+//inverser les mots du tableau
 var reverseWordsInArray = function(array) {
-    let test = [];
+    let verlan = [];
     for (let i = 0; i< array.length; i++) {
-        test.push(array[i].split('').reverse().join(''));
+        verlan.push(array[i].split('').reverse().join(''));
     }
-    return test;
+    return verlan;
 }
-
+// regrouper les noms par pair 
 var everyPossiblePair = function(array) {
-    return 'Write your method here';
-}
+   function pair(tableau) {
+        tableau.sort();
+        let table = [];
+        for(let i=0; i<tableau.length; i++)
+            for(let j=i+1; j<tableau.length; j++)
+                table.push([tableau[i], tableau[j]]);
+        return table;
+        
+    }
+return pair(array) 
+      
+} 
 
+
+//afficher les 2 derniers du tableau
 var allElementsExceptFirstThree = function(array) {
-    return 'Write your method here';
+     array.splice(0,3);
+     return array
 }
-
+// remettre le tableau dans l'ordre
 var addElementToBeginning = function(array, element) {
-    return 'Write your method here';
+    array.unshift(element);
+    return array
 }
-
+// classer les mot par la derniere lettre
 var sortByLastLetter = function(array) {
-    return 'Write your method here';
-}
 
+    return array.sort((a, b) => a.charCodeAt(a.length - 1) - b.charCodeAt(b.length - 1));
+}
+    
+// couper les mots en deux
 var getFirstHalf = function(string) {
-    return 'Write your method here';
-}
+    console.log(string.slice(0, string.length / 2))
+    return string.slice(0, Math.round(string.length / 2));
 
+}
+//afficher le nombre negatif
 var makeNegative = function(number) {
-    return 'Write your method here';
-}
+    if(number>0) {
+        number = -number;
+        return number;
+    } else {
+        return number;
+    }
 
+}
+//afficher le nombre de palyndrome
 var numberOfPalindromes = function(array) {
-    return 'Write your method here';
+    let count = 0;
+    for (i=0;i<array.length;i++) {
+        let pal = array[i].split('').reverse().join('')
+        if (array[i]==pal) {
+            count++
+        }
+    }
+
+    return count
 }
 
 var shortestWord = function(array) {
-    return 'Write your method here';
+    words = Array.isArray(words) ? words : [].slice.call(arguments);
+
+  return words.reduce(function (a, b) {
+    return a.length <= b.length ? a : b;
+  });
 }
+
+
 
 var longestWord = function(array) {
     return 'Write your method here';
